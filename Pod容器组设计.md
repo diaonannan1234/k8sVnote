@@ -1,4 +1,79 @@
 # Pod容器组设计
+
+### Pod容器组边斗设计一
+```
+Sidecar-边斗和日志收集器在同一个域下由平台为每个POD自动创建，对开发人员透明。
+Sidecat对业务应用容器进行代理，可以在Sidecat中实现限流、白名单等服务治理功能。
+业务应用日志、容器日志、Pod日志均写入“共享文件目录”中。
+“日志收集器”从目录中读取并转发出去。
+日志随着时间会慢慢变大，需要在设计中考虑。
+```
+``` plantuml
+@startuml
+!include <kubernetes/k8s-sprites-unlabeled-25pct>
+title pod设计
+
+
+package "合同Pod服务"{
+   node "合同Pod服务_历史版本1" {
+        Pod_Interface - [Sidecar:边斗] 
+        [Sidecar:边斗] --> [共享文件目录]
+        [Sidecar:边斗] <--> [容器:业务应用] 
+        [容器:业务应用] --> [共享文件目录]
+        [日志收集器] -> [共享文件目录]
+   }
+
+@enduml
+```
+
+
+
+###  Pod容器组边斗设计二
+```
+为应用加入监控
+```
+``` plantuml
+@startuml
+!include <kubernetes/k8s-sprites-unlabeled-25pct>
+title pod设计
+
+
+node "合同Pod服务_历史版本2" {
+        Pod_Interface - [Sidecar:边斗] 
+        [Sidecar:边斗] <--> [容器:业务应用] 
+        [容器:业务应用] --> [共享文件目录]
+        [日志收集器] -> [共享文件目录]
+        [监控] -> [容器:业务应用]
+   }
+
+@enduml
+```
+
+###  Pod容器组边斗设计三
+```
+为Sidecar加入缓存与（事件、发布订阅、池）队列
+```
+``` plantuml
+@startuml
+!include <kubernetes/k8s-sprites-unlabeled-25pct>
+title pod设计
+
+
+node "合同Pod服务_当前版本" {
+        Pod_1_Interface - [Sidecar:边斗]
+        [Sidecar:边斗] -> [缓存:ES]
+        [Sidecar:边斗] --> [队列:MQ] 
+        [Sidecar:边斗] <--> [容器:业务应用] 
+        [容器:业务应用] --> [共享文件存储]
+        [日志收集器] -> [共享文件存储]
+        [监控] -> [容器:业务应用]
+   }
+
+@enduml
+```
+
+
+
 ``` plantuml
 @startuml
 !include <kubernetes/k8s-sprites-unlabeled-25pct>
