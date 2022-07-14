@@ -1,71 +1,21 @@
 {
-    "created_time": "2022-05-08T01:38:06Z",
+    "created_time": "2022-06-17T01:25:57Z",
     "files": [
         {
             "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "59",
-            "modified_time": "2022-05-08T01:38:06Z",
+            "created_time": "2022-06-17T01:26:03Z",
+            "id": "80",
+            "modified_time": "2022-06-17T01:26:03Z",
             "name": "elastic.yaml",
-            "signature": "8927815551954657022",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "60",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "fluentd-daemonset.yaml",
-            "signature": "1749579337976717054",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "61",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "fluentd-rbac.yaml",
-            "signature": "4749813615722700542",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "62",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "kibana.yaml",
-            "signature": "3670979437978394366",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "63",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "ns.yaml",
-            "signature": "2424881375253831422",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "64",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "README.md",
-            "signature": "6857691952947076862",
+            "signature": "49299290052651",
             "tags": [
             ]
         }
     ],
     "folders": [
     ],
-    "id": "58",
-    "modified_time": "2022-05-08T01:38:06Z",
-    "signature": "8223662518543261438",
+    "id": "79",
+    "modified_time": "2022-06-17T01:25:57Z",
+    "signature": "67535721191461",
     "version": 3
 }

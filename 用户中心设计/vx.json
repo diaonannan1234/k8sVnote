@@ -1,92 +1,11 @@
 {
-    "created_time": "2022-05-08T01:38:06Z",
+    "created_time": "2022-06-17T01:29:42Z",
     "files": [
-        {
-            "attachment_folder": "",
-<<<<<<< Updated upstream
-            "created_time": "2022-03-30T00:28:54Z",
-            "id": "34",
-            "modified_time": "2022-05-18T07:23:53Z",
-            "name": "用户中心总体设计.md",
-            "signature": "79316809655366",
-=======
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "87",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "URL授权.md",
-            "signature": "2845011193498115838",
->>>>>>> Stashed changes
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "91",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "授权设计.md",
-            "signature": "6356207469772349182",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "92",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "数据授权.md",
-            "signature": "5020030538257735422",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "93",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "用户中心总体设计.md",
-            "signature": "5463993087077850878",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "94",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "菜单授权.md",
-            "signature": "863583513876045566",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "95",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "认证设计.md",
-            "signature": "5621503432041373438",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
-            "created_time": "2022-05-08T01:38:06Z",
-            "id": "96",
-            "modified_time": "2022-05-08T01:38:06Z",
-            "name": "页面元素授权.md",
-            "signature": "3986890418791325438",
-            "tags": [
-            ]
-        }
     ],
     "folders": [
-        {
-            "name": "安全中心"
-        }
     ],
-    "id": "86",
-    "modified_time": "2022-05-08T01:38:06Z",
-    "signature": "3824421211962023678",
+    "id": "87",
+    "modified_time": "2022-06-17T01:29:42Z",
+    "signature": "72273070119174",
     "version": 3
 }
